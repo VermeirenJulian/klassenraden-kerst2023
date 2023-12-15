@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klassenraad Timing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Klassenraad Timing</h1>
+    </header>
+
+    <!-- Beheerdersectie -->
+    <section id="admin-section" class="hidden">
+        <h2>Beheerder</h2>
+        <form id="admin-form">
+            <label for="adminKey">Beheerdersleutel:</label>
+            <input type="password" id="adminKey" name="adminKey" required>
+            <label for="lokaalSelect">Selecteer lokaal:</label>
+            <select id="lokaalSelect">
+                <option value="lokaal1">Lokaal 1</option>
+                <option value="lokaal2">Lokaal 2</option>
+                <option value="lokaal3">Lokaal 3</option>
+            </select>
+            <button type="button" onclick="verlengKlassenraad()">Verleng met 10 minuten</button>
+        </form>
+    </section>
+
+    <!-- Lokalen -->
+    <section id="lokaal1" class="lokaal">
+        <h2>Lokaal 1</h2>
+        <p>Directielid: Naam directielid 1</p>
+        <ul id="lokaal1-timing" class="timing-list">
+            <!-- Timing voor lokaal 1 -->
+            <li>23:00 - 23:10: Klas A</li>
+            <li>23:10 - 23:20: Klas B</li>
+            <li>23:20 - 23:30: Klas B</li>
+            <li>23:30 - 23:40: Klas B</li>
+            <!-- Voeg meer klassen toe zoals nodig -->
+        </ul>
+    </section>
+
+    <!-- Lokaal 2 -->
+    <section id="lokaal2" class="lokaal">
+        <h2>Lokaal 2</h2>
+        <p>Directielid: Naam directielid 2</p>
+        <ul id="lokaal2-timing" class="timing-list">
+            <!-- Timing voor lokaal 2 -->
+            <li>23:00 - 23:10: Klas A</li>
+            <li>23:10 - 23:20: Klas B</li>
+            <li>23:20 - 23:30: Klas B</li>
+            <li>23:30 - 23:40: Klas B</li>
+            <!-- Voeg meer klassen toe zoals nodig -->
+        </ul>
+    </section>
+
+    <!-- Lokaal 3 -->
+    <section id="lokaal3" class="lokaal">
+        <h2>Lokaal 3</h2>
+        <p>Directielid: Naam directielid 3</p>
+        <ul id="lokaal3-timing" class="timing-list">
+            <!-- Timing voor lokaal 3 -->
+            <li>23:00 - 23:10: Klas A</li>
+            <li>23:10 - 23:20: Klas B</li>
+            <li>23:20 - 23:30: Klas B</li>
+            <li>23:30 - 23:40: Klas B</li>
+            <!-- Voeg meer klassen toe zoals nodig -->
+        </ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+.lokaal {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.timing-list li {
+    list-style-type: none;
+}
+
+.current-time {
+    background-color: #ffcc00;
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Voeg deze regel toe om de beheerdersectie te verbergen bij het laden van de pagina */
+.hidden {
+    display: none;
+}
